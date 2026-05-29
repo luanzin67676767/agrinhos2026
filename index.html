@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agrinho2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho principal -->
+    <header class="main-header">
+        <div class="logo-area">
+            <!-- Ícone SVG de uma Planta/Broto -->
+            <svg class="plant-icon" viewBox="0 0 24 24" fill="none" xmlns="http://w3.org">
+                <path d="M12 22V10M12 10C12 10 14 7 18 7M12 10C12 10 10 7 6 7M12 14C12 14 15 12 19 13M12 17C12 17 9 15 5 16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            <h1>agrinho2026</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="#sobre">Sobre</a>
+            <a href="#projeto">Projeto</a>
+            <a href="#contato" class="btn-cta">Participar</a>
+        </nav>
+    </header>
+
+    <!-- Seção Hero (Destaque Principal) -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="badge">Inovação e Sustentabilidade</span>
+            <h2>O futuro do campo cultivado com tecnologia.</h2>
+            <p>Conectando a educação, o agronegócio e o desenvolvimento sustentável para a próxima geração.</p>
+            <div class="actions">
+                <a href="#saiba-mais" class="btn-primary">Saber Mais</a>
+                <a href="#documentacao" class="btn-secondary">Repositório GitHub</a>
+            </div>
+        </div>
+        
+        <!-- Ilustração de Plantas em SVG -->
+        <div class="hero-illustration">
+            <svg viewBox="0 0 200 200" fill="none" xmlns="http://w3.org">
+                <!-- Solo -->
+                <path d="M20 180C60 175 140 185 180 180" stroke="#102A43" stroke-width="4" stroke-linecap="round"/>
+                <!-- Planta Principal (Estilo Minimalista) -->
+                <path d="M100 180 Q105 110 110 40" stroke="#FADB14" stroke-width="5" stroke-linecap="round"/>
+                <!-- Folhas Amarelas/Douradas -->
+                <path d="M107 110 Q140 90 150 110 Q125 125 106 128" fill="#FADB14"/>
+                <path d="M104 140 Q60 120 50 140 Q80 155 103 152" fill="#F4B400"/>
+                <path d="M108 75 Q145 55 135 40 Q115 55 109 62" fill="#FFE600"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+        <p>&copy; 2026 agrinho2026 - Código aberto sob licença MIT.</p>
+    </footer>
+
+</body>
+</html>
+/* Definições de Variáveis e Paleta de Cores (Azul Escuro ao Amarelo) */
+:root {
+    --azul-escuro-deep: #0B192C;
+    --azul-escuro-medium: #1E3E62;
+    --azul-claro-accent: #008DDA;
+    --amarelo-principal: #FADB14;
+    --amarelo-ouro: #F4B400;
+    --amarelo-claro: #FFF4A3;
+    --texto-claro: #F5F7FA;
+    --texto-mutado: #BAC7D5;
+}
+
+/* Reset Básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--azul-escuro-deep);
+    color: var(--texto-claro);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow-x: hidden;
+}
+
+/* Header */
+.main-header {
+    background-color: var(--azul-escuro-medium);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 10%;
+    border-bottom: 3px solid var(--amarelo-principal);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.plant-icon {
+    width: 32px;
+    height: 32px;
+    color: var(--amarelo-principal);
+}
+
+.logo-area h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--texto-claro);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: var(--texto-mutado);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--amarelo-principal);
+}
+
+.nav-links .btn-cta {
+    background-color: var(--amarelo-principal);
+    color: var(--azul-escuro-deep);
+    padding: 0.5rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.nav-links .btn-cta:hover {
+    background-color: var(--amarelo-ouro);
+    color: var(--azul-escuro-deep);
+}
+
+/* Seção Hero (Apresentação Principal) */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 10%;
+    flex: 1;
+    gap: 2rem;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.badge {
+    background-color: rgba(250, 219, 20, 0.1);
+    color: var(--amarelo-principal);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid var(--amarelo-principal);
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.hero-content h2 {
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+    color: var(--texto-claro);
+}
+
+.hero-content p {
+    color: var(--texto-mutado);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--amarelo-principal);
+    color: var(--azul-escuro-deep);
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: transform 0.2s, background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--amarelo-ouro);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    border: 2px solid var(--azul-claro-accent);
+    color: var(--texto-claro);
+    padding: 0.8rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: rgba(0, 141, 218, 0.1);
+}
+
+/* Área da Imagem/Ilustração */
+.hero-illustration {
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, var(--azul-escuro-medium) 0%, transparent 70%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hero-illustration svg {
+    width: 80%;
+    height: 80%;
+    filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.3));
+}
+
+/* Footer */
+.main-footer {
+    background-color: #060F1B;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--texto-mutado);
+    border-top: 1px solid var(--azul-escuro-medium);
+}
+
+/* Responsividade para Celulares */
+@media (max-width: 768px) {
+    .main-header {
+        flex-direction: column;
+        gap: 1rem;
+        padding: 1.5rem;
+    }
+    
+    .hero-section {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 2rem 5%;
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .hero-illustration {
+        width: 280px;
+        height: 280px;
+    }
+}
